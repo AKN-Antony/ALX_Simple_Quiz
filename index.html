@@ -7,35 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="quiz-container">
-        <h1>Math Quiz</h1>
-        
-        <div id="quiz-question">
-            What is 2 + 2?
+     <div id="quiz-container">
+        <p id="quiz-question">What is 2 + 2?</p>
+        <div>
+            <input type="radio" id="choice1" name="quiz" value="4">
+            <label for="choice1">4</label><br>
+            <input type="radio" id="choice2" name="quiz" value="22">
+            <label for="choice2">22</label><br>
+            <input type="radio" id="choice3" name="quiz" value="3">
+            <label for="choice3">3</label>
         </div>
-        
-        <div class="options">
-            <label>
-                <input type="radio" name="quiz" value="3"> 3
-            </label>
-            <label>
-                <input type="radio" name="quiz" value="4"> 4
-            </label>
-            <label>
-                <input type="radio" name="quiz" value="5"> 5
-            </label>
-        </div>
-        
         <button id="submit-answer">Submit Answer</button>
-        
-        <div id="feedback"></div>
-
-        <div class="calculator-container">
-            <h2>Bonus Calculator</h2>
-            <!-- Calculator HTML remains the same -->
-        </div>
+        <p id="feedback"></p>
     </div>
-
-    <script src="script.js"></script>
+    <script src="quiz.js"></script>
 </body>
 </html>
